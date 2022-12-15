@@ -1,16 +1,52 @@
 :root{
     --surface-color: #fff;
 }
+img {     
+    object-fit: cover; 
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
 .movie-item{
+    position: relative;
     display: block;
+    width: 100%;
     height: 100%;  
-    border-radius: 1rem 1rem;
-    overflow: hidden;
-    text-decoration: none;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all .3s ease-in-out;
+}
+.movie-item:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.poster__img {      
+.movie-item__description{
+    position: absolute;
+    bottom: 0rem;
+    background-color: rgba(7, 6, 6, 0.908);
+    color: #fff;
+    border-radius: 1rem 1rem 0 0;
     width: 100%;
-    height: auto;
-  }
-  
+    padding: .5rem;
+    transition: all .3s ease-in-out;
+}
+
+.movie-item__description--title{
+    font-size: 1.5rem;
+    transition: all .5s ease-in-out;
+}
+.movie-item__description--title:hover{
+    color: rgba(2, 142, 235, 0.849);
+}
+.movie-item__description--statistics{
+display: flex;
+justify-content: space-between;
+}
+.FaHeart{
+    font-size: 1.5rem;
+    padding-right: .5rem;
+    color: rgba(2, 142, 235, 0.849);
+}
+.date{
+    color: rgba(2, 142, 235, 0.849);
+    font-weight: bolder;
+}  

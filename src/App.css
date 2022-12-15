@@ -1,0 +1,29 @@
+.movies{
+    display: grid;
+    place-items: center;
+    grid-gap: 1rem 2rem;
+    margin: 2rem 2rem;
+}
+@media only screen and (min-width: 1024px){
+    .movies{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media only screen and (max-width: 1023px){
+    .movies{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .movie-item{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 540px){
+    .movies{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width: 480px){
+    .movies{
+        grid-template-columns: 1fr;
+    }
+}
