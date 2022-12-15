@@ -1,0 +1,16 @@
+:root{
+    --surface-color: #fff;
+}
+.movie-item{
+    display: block;
+    height: 100%;  
+    border-radius: 1rem 1rem;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.poster__img {      
+    width: 100%;
+    height: auto;
+  }
+  
