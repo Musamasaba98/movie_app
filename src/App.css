@@ -26,4 +26,7 @@
     .movies{
         grid-template-columns: 1fr;
     }
+    .navbar{
+        flex-direction: column;
+    }
 }
