@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:rgba(2, 142, 235, 0.849);
+    padding: .5rem 1rem ;
+    z-index: 1000;
+}
+.heading{
+    color: #fff;
+}
+.fa-search{
+    color:rgba(2, 142, 235, 0.849) ;
+    padding-right: .3rem;
+}
+.input{
+    border: none;
+    outline: none;
+}
+.input-item{
+    font-size: 20px;
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 2px solid #8b8a8b;
+    border-radius: 2rem;
+}

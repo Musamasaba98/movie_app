@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Movie from './componets/Movie';
+import Navbar from './componets/Navbar';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   },[])
   return (
     <div className="App">
-      <h1>TRENDING MOVIES</h1>
+      <Navbar movies={movies}/>
       <div className='movies'>
         {
         movies.map((movie,key)=>
